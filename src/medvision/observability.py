@@ -10,7 +10,9 @@ except ImportError:  # keeps preprocessing/model modules usable without Promethe
 
 REQUESTS = Counter("medvision_inference_requests_total", "Inference requests") if Counter else None
 ERRORS = Counter("medvision_inference_errors_total", "Inference errors") if Counter else None
-LATENCY = Histogram("medvision_inference_latency_seconds", "Inference latency") if Histogram else None
+LATENCY = (
+    Histogram("medvision_inference_latency_seconds", "Inference latency") if Histogram else None
+)
 
 
 @contextmanager

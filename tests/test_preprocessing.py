@@ -1,7 +1,8 @@
+from io import BytesIO
+
 import numpy as np
 import pytest
 from PIL import Image
-from io import BytesIO
 
 from medvision.contracts import ImagePolicy
 from medvision.preprocessing import decode_and_normalize

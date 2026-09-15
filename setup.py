@@ -20,9 +20,9 @@ setuptools.setup(
     description="A small python package for CNN app",
     long_description=long_description,
     long_description_content="text/markdown",
-    url=f"https://github.com/Ajayghimire9/Chest-Diesease-Classification-from-chest-CT-Scan-Image",
+    url="https://github.com/Ajayghimire9/Chest-Diesease-Classification-from-chest-CT-Scan-Image",
     project_urls={
-        "Bug Tracker": f"https://github.com/Ajayghimire9/Chest-Diesease-Classification-from-chest-CT-Scan-Image/issues",
+        "Bug Tracker": "https://github.com/Ajayghimire9/Chest-Diesease-Classification-from-chest-CT-Scan-Image/issues",
     },
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src")

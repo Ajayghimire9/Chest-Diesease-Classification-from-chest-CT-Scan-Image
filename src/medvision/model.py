@@ -12,8 +12,12 @@ class CompactCNN(nn.Module):
     def __init__(self, num_classes: int = 2) -> None:
         super().__init__()
         self.features = nn.Sequential(
-            nn.Conv2d(1, 16, 3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
-            nn.Conv2d(16, 32, 3, padding=1), nn.ReLU(), nn.AdaptiveAvgPool2d(1),
+            nn.Conv2d(1, 16, 3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+            nn.Conv2d(16, 32, 3, padding=1),
+            nn.ReLU(),
+            nn.AdaptiveAvgPool2d(1),
         )
         self.classifier = nn.Linear(32, num_classes)
 
